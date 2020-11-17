@@ -16,6 +16,11 @@
 
 今日のハッシュタグ `#nodered #noderedjp` です。
 
-## 次の章へ
+## スタート
 
 * [Node-REDを動かしてみよう](01_getting_started.md)
+
+## エクストラ
+
+* [エクストラ：ほかの動物画像APIをつないで画像表示してみよう](98_extra_animal.md)
+* [エクストラ：public-apisで色々つないでみる](99_extra_api.md)
