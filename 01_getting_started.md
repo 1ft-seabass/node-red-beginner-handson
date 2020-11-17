@@ -1,14 +1,66 @@
-# はじめに
-
-## もくじ
-
-
+# Node-REDを動かしてみよう
 
 ## Node-RED とは
 
-Node-REDはNode.jsで動く仕組みです。Node-RED はサーバーとフロントエンドの両方を作れる仕組みです。GUI（ビジュアルで見えるUI）によって、APIを取得する仕組みであったり、dashboardのように表示も作れます。
+![image](https://i.gyazo.com/07c703e8af39a7a5aaf5e660f663b576.png)
+
+[Node\-RED日本ユーザ会](https://nodered.jp/)
+
+Node-RED は Node.js で動く仕組みです。Node-RED はサーバーとフロントエンドの両方を作れる仕組みです。GUI（ビジュアルで見えるUI）によって、APIを取得する仕組みであったり、dashboard のように表示も作れます。
 
 [フロー検索](https://flows.nodered.org/)で他の人の作った仕組みやノード再利用でき、プロトタイプするうえでも小さく素早く進める側面を備えています。
+
+### STEM 教育の目線の Node-RED
+
+![image](https://i.gyazo.com/ad71e11b0d71e69b38be011a9d9cc448.png)
+
+Node-RED はローコードプログラミングな手軽なアプローチで STEM 教育で言及されるような科学・技術・工学・数学といった要素に触れることができます。
+
+たとえば、IoT（Internet of Things）のような現実世界をセンサーで取得したり（科学）、何かを動かしたり（工学）あるいは、インターネット上の様々なデータ API を取得して（技術）データに応じて計算したり分析したりできます（数学）。
+
+## Katacoda について
+
+![image](https://i.gyazo.com/3d73fc84a538e4cffe4a15fb30218abc.png)
+
+一定時間の使い切りの環境で自由に技術で遊ぶ事ができる WEB サービスです。環境構築をブラウザでだけでできて「まず試して体験」に注力できます。制限時間は **おおよそ1時間** くらい。
+
+![image](https://i.gyazo.com/2de10931d575e9e705572040afb51d37.png)
+
+ですので今日は、おおよそ 30 ～ 40 分で 1 つのハンズオンで行い、合計 2 つのハンズオンを行います。途中で 1 つめのハンズオンが終わったら Katacoda をリロードして起動しなおします。
+
+## Katacoda での Node-RED の準備
+
+教材はこちらです。
+
+https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
+
+まず、自分のアカウントでログインしてアクセスしてみましょう。
+
+![image](https://i.gyazo.com/239c0aebb18423e4682942122c26206a.png)
+
+このように教材がはじまるので START SENARIO をクリックします。
+
+![image](https://i.gyazo.com/1a31474455106f387e226d5be80e94dd.png)
+
+> This is a playground environment for the Node-RED flow editor.
+> 
+> After the message, "Connecting to Port 1880" is displayed for about 40 seconds, your browser will automatically load Node-RED flow editor. On the playground, you can install nodes, develop your flow, and deploy the flow. Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
+> 
+> Open new tab: https://~~~~~~~~~~~~~~~~.environments.katacoda.com
+>
+> これは、Node-REDフローエディタの遊び場環境です。 
+> 
+> "Connecting to Port 1880"「ポート1880に接続しています」というメッセージが約40秒間表示された後、ブラウザは自動的にNode-REDフローエディタをロードします。 遊び場では、ノードをインストールし、フローを開発し、フローをデプロイできます。 Katacodaの一時的な環境であるため、Node-REDインスタンスは約50分後に自動的に削除されます。 
+
+とのことで、こちらは起動して待ちます。
+
+![image](https://i.gyazo.com/7567bd2523e69ba0ce1fa9827fe27039.png)
+
+おおよそ、40 秒 ～ 1 分待っていると起動するのでお待ちください。
+
+![image](https://i.gyazo.com/1c4bd6ea738b6b5dd24214d0377db21a.png)
+
+起動したらできたら、Zoomのチャットに反応いただけたらうれしいです。
 
 ## 動かしてみよう
 
@@ -35,6 +87,10 @@ Node-REDはNode.jsで動く仕組みです。Node-RED はサーバーとフロ�
 ![image](https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png)
 
 メッセージはJSONデータで構成され、`msg` という一番上のオブジェクトにぶら下がっている `payload` というオブジェクトの中で、各ノードで処理された内容がバケツリレーのようにやり取りされていきます。
+
+![image](https://i.gyazo.com/7a554e64647323ace99a930de52bfe67.png)
+
+こんな感じです。
 
 ![image](https://i.gyazo.com/20007903edfd97e9aabddeedd5d6d8d5.png)
 
@@ -65,15 +121,15 @@ Node-REDはNode.jsで動く仕組みです。Node-RED はサーバーとフロ�
 
 ![image](https://i.gyazo.com/69d9424ea7db4779794c1d39e1d0a44f.png)
 
-injectノードをワークスペースにドラックアンドドロップします。
+inject ノードをワークスペースにドラックアンドドロップします。
 
 ![image](https://i.gyazo.com/4ab5cd15ee540f8b2181cafc29cf9377.png)
 
-injectノードの横にdebugノードをドラックアンドドロップします。
+inject ノードの横にdebugノードをドラックアンドドロップします。
 
 ![image](https://i.gyazo.com/b8eb34fb3296018ddae614e01bd47a50.png)
 
-injectノードとdebugノードをつなぎます。つなぐものはワイヤーといいます。
+inject ノードと debug ノードをつなぎます。つなぐものはワイヤーといいます。
 
 ![image](https://i.gyazo.com/58de57346d51b7620c32562f9c8690bf.png)
 
@@ -118,3 +174,13 @@ injectノードをダブルクリックしてデータを変更しましょう�
 ![image](https://i.gyazo.com/5ce3b9ec73285db932270eabfab4ac63.png)
 
 動かして、inject ノードから送られるデータが 50 の数値になっているか確認します。
+
+## この章のまとめ
+
+![image](https://i.gyazo.com/9d560ea43e326e7f26b905d1771e60a2.png)
+
+inject ノードと debug ノードのフローづくりを通じて Node-RED のファーストステップをお伝えしました。
+
+## 次の章へ
+
+* [猫画像 API からデータを取得してみよう](02_api_request.md)
