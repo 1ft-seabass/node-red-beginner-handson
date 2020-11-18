@@ -4,7 +4,7 @@
 
 ![image](https://i.gyazo.com/364cbe715eccee492a9480e772535318.png)
 
-Node-RED パレットを見てみると、実にMQTT・HTTP・WebSocket・TCP・UDPなどいろいろなプロトコルを手軽に接続することができます。
+Node-RED パレットを見てみると、ネットワークというカテゴリに実に様々なノードが並んでます。
 
 今回はその中でも、たくさんの API につなぐことができる HTTP プロトコルに対応した http request ノードを使ってみましょう。
 
