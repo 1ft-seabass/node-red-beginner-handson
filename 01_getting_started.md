@@ -28,7 +28,7 @@ Node-RED はローコードプログラミングな手軽なアプローチで S
 
 ですので今日は、おおよそ 30 ～ 40 分で 1 つのハンズオンで行い、合計 2 つのハンズオンを行います。途中で 1 つめのハンズオンが終わったら Katacoda をリロードして起動しなおします。
 
-## Katacoda での Node-RED の準備
+## [実践]: Katacoda での Node-RED の準備
 
 教材はこちらです。
 
@@ -117,7 +117,7 @@ https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
 
 などがあります。
 
-## inject ノードと debug ノードをつなげていく
+## [実践]: inject ノードと debug ノードをつなげていく
 
 ![image](https://i.gyazo.com/69d9424ea7db4779794c1d39e1d0a44f.png)
 
@@ -137,7 +137,7 @@ inject ノードと debug ノードをつなぎます。つなぐものはワイ
 
 ![image](https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png)
 
-## 動かしてみる
+## [実践]: 動かしてみる
 
 ![image](https://i.gyazo.com/486f98add3229d4cc880359bf1b3b643.png)
 
@@ -151,7 +151,7 @@ debugノードのデータはサイドバーのデバッグタブをクリック
 
 injectノードの横のボタンを押すとdebugノードにデータが送られます。今回はinjectノードは日付（タイムスタンプ）を送っています。さきほどのデバッグタブでdebugノードが受け付けたデータを確認できます。
 
-## injectノードで送るデータを変更
+## [実践]: injectノードで送るデータを変更
 
 injectノードをダブルクリックしてデータを変更しましょう。
 
