@@ -50,7 +50,9 @@
 
 あらかじめ、API の送り先を一つ発行してあります。
 
-`https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq`
+```
+https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+```
 
 こちらです↑
 
@@ -148,7 +150,13 @@ http request ノードをダブルクリックして詳細を設定します。
 
 ![image](https://i.gyazo.com/6c3d0e4183aabfa1f05e182ecf82aa77.png)
 
-URL の項目に今回のチャンネルへメッセージが送れる API URL の `https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq` を設定します。
+URL の項目に今回のチャンネルへメッセージが送れる API URL の
+
+```
+https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+```
+
+を設定します。
 
 設定出来たら、完了ボタンをクリックして設定を完了します。
 
