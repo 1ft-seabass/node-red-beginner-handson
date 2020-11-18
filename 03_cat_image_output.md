@@ -12,7 +12,7 @@
 
 このようにAPIの仕様をつかんで、JSONデータの中身を理解して、必要なデータを取り出せるようになると、さまざまなAPIを自分好みに使えたり、他のAPIとも連携できるようになるのでやってみましょう。
 
-## change ノードをフローに準備する
+## [実践]: change ノードをフローに準備する
 
 ![image](https://i.gyazo.com/82db4f456538ca13751287e836c5858e.png)
 
@@ -34,7 +34,7 @@ change ノードを入れるために http request ノードと debug ノード 
 
 これで change ノードが入りました。
 
-## change ノードでデータを取り出す
+## change ノードでデータを取り出すには？
 
 ![image](https://i.gyazo.com/5d4495a528da6b9f46abeb89bc501975.png)
 
@@ -83,9 +83,18 @@ JSONata はドットを使って JSON データの中身を取り出すことが
 
 payload の中の file という値ということで `payload.file` となります。
 
+## [実践]: change ノードでデータを取り出す
+
+それでは、実際に設定していきましょう。まず、change ノードをダブルクリックしてプロパティの編集画面を開きます。
+
+「ルール」を下記のように変更します。
+
+- 「対象の値」の種類を「JSONate式」（英語では expression）に変更する
+- 「対象の値」の値（入力欄）に `payload.file` を入力する
+
 ![image](https://i.gyazo.com/c90a6a04c6331cf86752db74d30fb177.png)
 
-下部の JSONata の値として猫画像を file を取り出すために `payload.file` と記述しましょう。
+この指定により、`payload.file` に指定されている猫画像を指定することができます。
 
 ![image](https://i.gyazo.com/dcc16d4d8fa6f944b138e2c65b081d64.png)
 
@@ -103,7 +112,7 @@ payload の中の file という値ということで `payload.file` となり�
 
 デバッグタブを見てみると、無事 file の中身が取り出されて猫画像の URL だけが取り出すことができました。
 
-## 画像を表示するノード node-red-contrib-image-output ノードを追加
+## [実践]: 画像を表示するノード node-red-contrib-image-output ノードを追加
 
 さて、画像を表示するノードですが、標準のノード群には存在していません。
 
@@ -156,7 +165,7 @@ node-red-contrib-image-output と入力して検索して、 node-red-contrib-im
 
 しばらく待っているとインストールが完了します。
 
-## node-red-contrib-image-output ノードをフローに加える
+## [実践]: node-red-contrib-image-output ノードをフローに加える
 
 node-red-contrib-image-output ノードを加えて、画像を表示しましょう。
 
@@ -194,7 +203,7 @@ inject ノードをクリックして猫画像が node-red-contrib-image-output 
 
 画像が表示されるはずです！
 
-## 画像を大きくしたいとき
+## [実践]: 画像を大きくしたいとき
 
 ![image](https://i.gyazo.com/018e05bc6e6c32f14a96e32d2405ca8c.png)
 
