@@ -51,7 +51,7 @@ API につなげるためには HTTP という通信のルール（プロトコ�
 
 今回は、私が別の機会に書いた [すぐにAPIを体験！public\-apis 100以上のJavaScript axiosサンプル集](https://protoout.studio/posts/public-apis-api-get) を使っていきます。
 
-## Node-RED で http request する仕組みを作ってみる
+## [実践]: Node-RED で http request する仕組みを作ってみる
 
 ![image](https://i.gyazo.com/baedc63f4a27f63eb33277aeb49481eb.png)
 
@@ -92,7 +92,7 @@ HTTP リクエストの仕様として読み解くと以下のようになりま
 
 これのみです。追加で設定すべきパラメータもなく、これは、GET リクエストのためブラウザからアクセスでき、とても扱いやすいAPIです。
 
-## Node-RED の http request ノードに設定してみる
+## [実践]: Node-RED の http request ノードに設定してみる
 
 ![image](https://i.gyazo.com/5eedcc78773990656fca5301fbc7acf4.png)
 
@@ -119,7 +119,7 @@ HTTP リクエストの仕様として読み解くと以下のようになりま
 
 デプロイをクリックして Node-RED に設定を反映させます。
 
-## 動かしてみる
+## [実践]: 動かしてみる
 
 ![image](https://i.gyazo.com/d02727178bb7fb092a36642e2eb0d9ee.png)
 
@@ -129,13 +129,15 @@ HTTP リクエストの仕様として読み解くと以下のようになりま
 
 サイドバーのデバッグタブには、猫画像APIからリクエストが表示されます。
 
-## 返答データを文字列からJSONに変更する
+## [実践]: 返答データを文字列からJSONに変更する
 
 ![image](https://i.gyazo.com/e0354e1cefe80b1ebf9bc905cc081d2c.png)
 
 現状では取得したデータは文字列です。今後扱いやすいようにJSONに変更しましょう。
 
 文字列のままだと頑張って読んで探して取り出す必要がありますが、JSONデータで受け取れると入れ子構造で目的のデータが取り出しやすくなります。
+
+それでは、http request ノードをダブルクリックをしてプロパティ編集画面を表示します。
 
 ![image](https://i.gyazo.com/7ad33f4cec6e1be03622557bd9af245e.png)
 
