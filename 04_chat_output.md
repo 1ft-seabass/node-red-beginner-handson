@@ -56,7 +56,7 @@
 
 今回はこちらのURLに、POSTリクエストで送るデータはJSONで content というオブジェクトの中に文字を入れてメッセージを送ります。
 
-## Katacoda での Node-RED の準備
+## [実践]: Katacoda での Node-RED の準備
 
 ![image](https://i.gyazo.com/2de10931d575e9e705572040afb51d37.png)
 
@@ -82,7 +82,7 @@ https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
 
 起動したらできたら、Zoomのチャットに反応いただけたらうれしいです。
 
-## Node-RED のフローを作ってみる
+## [実践]: Node-RED のフローを作ってみる
 
 ![image](https://i.gyazo.com/9a0be632d5aa24d4b229db4b14f38ebf.png)
 
@@ -106,7 +106,7 @@ https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
 
 各ノードを inject ノード → http request ノード → debug ノード の順につなぎます。これで、フローは完成です。
 
-## inject ノードで、送るメッセージの中身のデータを作る
+## [実践]: inject ノードで、送るメッセージの中身のデータを作る
 
 ![image](https://i.gyazo.com/b0df92b33ddc8b9b65c2eaf56c5b6297.png)
 
@@ -132,7 +132,7 @@ inject ノードをダブルクリックして詳細を設定します。
 
 JSON データは msg の中の payload の中にある content というオブジェクトの中に、今回送りたい文字を入れています。
 
-## http request ノードで前述した Discord の API URL に送るように設定
+## [実践]: http request ノードで前述した Discord の API URL に送るように設定
 
 ![image](https://i.gyazo.com/4a24882968e410ad4cd7bb6ebacdfa01.png)
 
