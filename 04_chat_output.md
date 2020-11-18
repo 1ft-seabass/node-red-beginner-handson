@@ -50,7 +50,9 @@
 
 あらかじめ、API の送り先を一つ発行してあります。
 
-`https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq`
+```
+https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+```
 
 こちらです↑
 
@@ -78,11 +80,7 @@ https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
 
 おおよそ、40 秒 ～ 1 分待っていると起動するのでお待ちください。
 
-![image](https://i.gyazo.com/1c4bd6ea738b6b5dd24214d0377db21a.png)
-
-起動したらできたら、Zoomのチャットに反応いただけたらうれしいです。
-
-## [実践]: Node-RED のフローを作ってみる
+## Node-RED のフローを作ってみる
 
 ![image](https://i.gyazo.com/9a0be632d5aa24d4b229db4b14f38ebf.png)
 
@@ -148,7 +146,13 @@ http request ノードをダブルクリックして詳細を設定します。
 
 ![image](https://i.gyazo.com/6c3d0e4183aabfa1f05e182ecf82aa77.png)
 
-URL の項目に今回のチャンネルへメッセージが送れる API URL の `https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq` を設定します。
+URL の項目に今回のチャンネルへメッセージが送れる API URL の
+
+```
+https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+```
+
+を設定します。
 
 設定出来たら、完了ボタンをクリックして設定を完了します。
 
