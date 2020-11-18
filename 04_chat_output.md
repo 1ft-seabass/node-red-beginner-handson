@@ -80,10 +80,6 @@ https://www.katacoda.com/kazuhitoyokoi/scenarios/node-red
 
 おおよそ、40 秒 ～ 1 分待っていると起動するのでお待ちください。
 
-![image](https://i.gyazo.com/1c4bd6ea738b6b5dd24214d0377db21a.png)
-
-起動したらできたら、Zoomのチャットに反応いただけたらうれしいです。
-
 ## Node-RED のフローを作ってみる
 
 ![image](https://i.gyazo.com/9a0be632d5aa24d4b229db4b14f38ebf.png)
