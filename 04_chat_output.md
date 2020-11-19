@@ -51,7 +51,7 @@
 あらかじめ、API の送り先を一つ発行してあります。
 
 ```
-https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+＜当日だけ開かれたDiscordのURLを記述していました＞
 ```
 
 こちらです↑
@@ -149,7 +149,7 @@ http request ノードをダブルクリックして詳細を設定します。
 URL の項目に今回のチャンネルへメッセージが送れる API URL の
 
 ```
-https://discordapp.com/api/webhooks/778242291374489600/Yg2L4iOQZvQmoofuqsC8HDS4_FysNEQr7Y9eIgNqJVup2NQ318UzmVX9umA-RY5AZseq
+＜当日だけ開かれたDiscordのURLを記述していました＞
 ```
 
 を設定します。
@@ -219,7 +219,9 @@ inject ノードで送る JSON データを変更してみましょう。
 
 このように `:relaxed:` という部分が絵文字となって投稿できます。
 
-[Qiita/Github/Slack/Discord 絵文字一覧 \- Qiita](https://qiita.com/yamadashy/items/ae673f2bae8f1525b6af) こちらを参考に絵文字でメッセージを装飾してみましょう～。
+[Qiita/Github/Slack/Discord 絵文字一覧 \- Qiita](https://qiita.com/yamadashy/items/ae673f2bae8f1525b6af) 
+
+こちらを参考に絵文字でメッセージを装飾してみましょう～。
 
 ## この章のまとめ
 

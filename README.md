@@ -47,7 +47,7 @@
 
 ![image](https://i.gyazo.com/5a32626d5bd81e02ea9c9ef47a98f67d.png)
 
-https://forms.gle/66g5Sgh1zoWxMoDd9
+＜当日のアンケートURLが記述されてました＞
 
 ## ありがとうございました
 
